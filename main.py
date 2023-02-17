@@ -5,7 +5,10 @@ import random
 import numpy as np
 import cv2 as cv
 
-from icecream import ic
+try:
+    from icecream import ic
+except ImportError:
+    ic = print
 
 BATCH_SIZE = 10
 
